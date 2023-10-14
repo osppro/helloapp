@@ -6,10 +6,16 @@
     <title>introduction to mithriljs</title>
 </head>
 <body>
-    <script src="//unpkg.com/mithril/mithril.js"></script>
+    <script src="https://unpkg.com/mithril/mithril.js"></script>
     <script>
     var root = document.body
-
+    m.render(root, 
+         m("main", [
+                m("h1", {class: "title"}, "My first app"),
+                m("button", "A button"),
+            ])
+    )
+    // m.render(root, m("h1", "My first app"))
     // your code goes here!
     </script>
 </body>
